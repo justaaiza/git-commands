@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands</title>
+    <style>
+        html {
+            background-color: black;
+            word-spacing: 3px;
+        }
+
+        h1 {
+            color: aliceblue;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        ol {
+            color: rgb(96, 211, 96);
+        }
+
+        ul {
+            color: rgb(111, 111, 216);
+        }
+
+        p {
+            color: aquamarine;
+        }
+
+        .intro {
+            color: aquamarine;
+        }
+
+        .rare {
+            color: rgb(111, 111, 216);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Git and GitHub Commands</h1>
+    <div>
+        <h2>Git</h2>
+        <p>It is a version control system.</p>
+        <h4 class="intro">It allows:</h4>
+        <ol class="intro">
+            <li>access to history</li>
+            <li>to collaborate with other programmers</li>
+            <li>git account can be mentioned in portfolio</li>
+        </ol>
+    </div>
+    <div>
+        <h2>Commands</h2>
+        <ol>
+            <li>
+                <h3>Configuration</h3>
+                <h4>
+                    <ul>
+                        <li>git config --global user.name "username"</li>
+                        <li>git config --global user.email "email address"</li>
+                        <li>git config --list</li>
+                    </ul>
+                </h4>
+
+            </li>
+            <li>
+                <h3>Clone Command</h3>
+                <h4 class="rare">git clone "HTTPS link"</h4>
+                <p>It clones/copy a repository from remote (github) to your local device (laptop/computer).</p>
+            </li>
+            <li>
+                <h3>Change Directory</h3>
+                <ul>
+                    <li>
+                        <h4>cd "folder name"</h4>
+                        <p>It allows you to enter a folder, in order to make changes.</p>
+                    </li>
+                    <li>
+                        <h4>cd ..</h4>
+                        <p>It allows you to exit a folder.</p>
+                    </li>
+
+                </ul>
+
+            </li>
+            <li>
+                <h3>List Files</h3>
+                <ul>
+                    <li>
+                        <h4>ls</h4>
+                        <p>It lists down all files.</p>
+                    </li>
+                    <li>
+                        <h4>ls -hidden</h4>
+                        <p>It shows even the hidden files e.g .git</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Status Command</h3>
+                <h4 class="rare">git status</h4>
+                <p>It shows status of your files (untracked, modified, unmodified, staged etc.)</p>
+            </li>
+            <li>
+                <h3>Add command</h3>
+                <ul>
+                    <li>
+                        <h4>git add "file name"</h4>
+                        <p>In order to add files individually (files are staged and ready to be commited).</p>
+                    </li>
+                    <li>
+                        <h4>git add .</h4>
+                        <p>In order to add all files collectively.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Commit Command</h3>
+                <h4 class="rare">git commit -m"some message"</h4>
+                <p>Message should be regarding the change you made.</p>
+            </li>
+            <li>
+                <h3>Push Command</h3>
+                <ul>
+                    <li>
+                        <h4>git push origin main</h4>
+                        <p>Push the changes you made on your local device to github repo.</p>
+                    </li>
+                    <li>
+                        <h4>git push -u origin main</h4>
+                        <p>Push all the changes you made on your local device to github repo (it also allows you to type
+                            only0 'git push' for all futher pushes)</p>
+                    </li>
+                </ul>
+
+            </li>
+            <li>
+                <h3>Make a folder locally</h3>
+                <h4 class="rare">mkdir "folder name"</h4>
+                <p>It allows you to make a folder locally on a code editor.</p>
+            </li>
+            <li>
+                <h3>Initialization</h3>
+                <h4 class="rare">git init</h4>
+                <p>It makes a local folder, a git repo (initilizes an empty repo).</p>
+            </li>
+            <li>
+                <h3>Make a remote file local</h3>
+                <h4 class="rare">git remote add origin "HHTPS link"</h4>
+                <p>A file made on github can be opened locally on your code editor.</p>
+            </li>
+            <li>
+                <h3>Verification</h3>
+                <h4 class="rare">git remote -v</h4>
+                <p>It allows to verify if a file is successfully made local.</p>
+            </li>
+            <li>
+                <h3>Branch Commands</h3>
+                <ul>
+                    <li>
+                        <h4>git branch</h4>
+                        <p>It shows all the existing branches plus the branch you are currently on.</p>
+                    </li>
+                    <li>
+                        <h4>git branch -M main</h4>
+                        <p>Change name of a folder to main.</p>
+                    </li>
+                    <li>
+                        <h4>git branch -d "branch name"</h4>
+                        <p>It deletes the mentioned folder.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Checkout Commands</h3>
+                <ul>
+                    <li>
+                        <h4>git checkout "branch name"</h4>
+                        <p>It enter the branch mentioned.</p>
+                    </li>
+                    <li>
+                        <h4>git checkout -b "branch name"</h4>
+                        <p>It allows you to make a new branch.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Merging Codes</h3>
+                <ul>
+                    <li>
+                        <h4>git diff "branch name"</h4>
+                        <p>It checks the differences between the current branch you are on and the branch mentioned.</p>
+                    </li>
+                    <li>
+                        <h4>git merge "branch name"</h4>
+                        <p>It merges the codes of the current branch you are on and the branch mentioned.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Pull Command</h3>
+                <h4 class="rare">git pull origin main</h4>
+                <p>Pull request on command line</p>
+            </li>
+            <li>
+                <h3>Undoing Staged Changes</h3>
+                <ul>
+                    <li>
+                        <h4>git reset "file name"</h4>
+                        <p>It undo the last add command of the mentioned file.</p>
+                    </li>
+                    <li>
+                        <h4>git reset </h4>
+                        <p>It undo the last add command of all files.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Undoing Committed Changes</h3>
+                <ul>
+                    <li>
+                        <h4>git reset HEAD~1</h4>
+                        <p>It undo last add and commit command.</p>
+                    </li>
+                    <li>
+                        <h4>git reset "hash"</h4>
+                        <p>It undo the add and commit commands till the mentioned hash.</p>
+                    </li>
+                    <li>
+                        <h4>git reset --hard"hash"</h4>
+                        <p>It undo the add and commit commands till the mentioned hash on github too.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>To check commits</h3>
+                <h4 class="rare">git log</h4>
+                <p>It shows all the commits that have been made.</p>
+            </li>
+            <li>
+                <h3>Fork</h3>
+                <p>It allows you to make a rough copy of someone else's code</p>
+            </li>
+
+        </ol>
+    </div>
+</body>
+
+</html>
